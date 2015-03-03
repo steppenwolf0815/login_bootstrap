@@ -1,5 +1,5 @@
 # login_bootstrap
-Simple Login wit bootstrap framework
+Simple Login using bootstrap framework
 
 To build:
 
