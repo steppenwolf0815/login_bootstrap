@@ -1,0 +1,38 @@
+body
+{
+	background-color: #C6D3DF;
+}
+
+.dk-tooltip
+{
+	background-color:#999999;
+	position:relative;
+	top:7px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	padding:5px;
+	color:white;
+	text-align:center;
+}
+
+.dk-tooltip:after
+ {
+	 position:absolute;
+	 top:-10px;
+	 content:"";
+	 border-left: 10px solid transparent;
+	 border-right: 10px solid transparent;
+	 border-bottom: 10px solid #999999;
+	 left:50%;
+}
+.dk-header
+{
+	background-color:#3074AE;
+	padding:30px;
+	margin:40px;
+	margin-left:0px;
+	width:100%;
+	color:white;
+}
+

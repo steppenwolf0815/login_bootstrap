@@ -1,0 +1,23 @@
+﻿<div class="container dk-header">
+	<h1>Willkommen bei Placeholder!</h1>
+	<h4></h4>
+</div>
+<div class="container" ng-controller="loginController">
+	<div class="col-lg-offset-4 col-lg-4">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Bitte melden Sie sich an.</div>
+			<form name="form" ng-submit="login()" novalidate class="panel-body">
+				<div class="form-group"></div>
+				<div class="form-group">
+					<label for="username" class="control-label">Username</label>
+					<input type="text" name="username" id="username" placeholder="Username" ng-model="username" unique-username required autofocus class="form-control" dktooltip="username">
+				</div>
+				<div class="form-group" >
+					<label for="password" class="control-label">Password</label>
+					<input type="password" name="password" id="password" ng-model="password" required match="verification" class="form-control" dktooltip="password">
+				</div>
+				<input type="submit" value="Anmelden" ng-disabled="form.$invalid" class="btn btn-primary">
+			</form>
+		</div>
+	</div>
+</div>
