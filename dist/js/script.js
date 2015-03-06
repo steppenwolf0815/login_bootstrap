@@ -72,9 +72,13 @@ var app = angular.module("login", ['ui.bootstrap', 'ngRoute']);
 		};
 	}])
 	
-	.controller("restrictedController", [ '$rootScope', function($rootScope)
+	.controller("restrictedController", [ '$rootScope', '$location', function($rootScope, $location)
 	{
 		//check if User is really logged in
+		if(!$rootScope.loggedIn)
+		{
+			$location.url( "" );
+		}
 	}])
 	
 	.controller('modalInstController', [ '$scope', '$modalInstance', function ($scope, $modalInstance)
