@@ -16,9 +16,8 @@ module.exports=function(grunt)
 		      {expand: true, cwd:'bower_components/bootstrap/dist/css/', src: ['bootstrap.min.css','bootstrap-theme.min.css'], dest: 'dist/css/'},
 		      {expand: true, cwd:'templates/', src: ['**'], dest: 'dist/templates/'},
 		      {expand: true, cwd:'js/', src: ['**'], dest: 'dist/js/'},
-		      {expand: true, cwd:'css/', src: ['**'], dest: 'dist/css/'},
-		      {expand: true, cwd:'dist/', src: ['**'], dest: '../../Dokumente und Einstellungen/klon/Desktop/miniweb-win32-20130309/miniweb/htdocs/dist_bootstrap'}
-		    ],
+		      {expand: true, cwd:'css/', src: ['**'], dest: 'dist/css/'}
+			  ],
 		  },
 		}
 	});
